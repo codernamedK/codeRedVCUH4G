@@ -9,11 +9,11 @@ public class MainFrame {
         int behaviorCount = 0;
 
         System.out.print("Hi there! Your planet is currently improving, but there is still work to be done in your day to day...\n");
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         int userChoice = 0;
         while (userChoice != 1 && userChoice != 2 && userChoice != 3) {
             System.out.print("Wow look at the time! You almost missed your doctors appointment. Would you like to walk (1), ride the bike (2), or drive (3)?\n");
-            userChoice = scanner.nextInt();
+            userChoice = in.nextInt();
 
             if (worldSustainability <= 75  && worldSustainability > 100){
             if (userChoice == 1 || userChoice == 2) {
@@ -32,12 +32,12 @@ public class MainFrame {
 
         while (worldSustainability <= 150) {
             System.out.print("Pick an option to better the environment(1) or stop playing(2)!/n");
-            int userSecChoice = scanner.nextInt();
+            int userSecChoice = in.nextInt();
             if (userSecChoice == 1) {
                 while (true) {
                     if(worldSustainability <= 50 && worldSustainability > 75){
                     System.out.print("Looks like you are thirsty! Buy a 40 pack of plastic water bottles(1) or drink fridge water(2)?\n");
-                    int userThirdChoice = scanner.nextInt();
+                    int userThirdChoice = in.nextInt();
 
                     if (userThirdChoice == 1) {
                         System.out.print("Unfortunately your water bottles were not properly disposed of. The ocean now has over 70% of plastic waste in it making it difficult for species to survive.\n");
