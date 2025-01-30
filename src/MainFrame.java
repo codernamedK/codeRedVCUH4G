@@ -69,7 +69,8 @@ public class MainFrame {
     }
 
     public static void main(String[] args) {
-        int userChoice = 0;
+        worldSustainability = 51;
+	    int userChoice = 0;
 		//int progress = checkStatus(); use this method to check on status
 		
 		//when progress perct less than 50 
