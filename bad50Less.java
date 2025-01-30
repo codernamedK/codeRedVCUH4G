@@ -18,7 +18,7 @@ public class mainframe {
 		//int progress = checkStatus(); use this method to check on status
 		
 		//when progress perct less than 50 
-		if (progress <= 50 && progress > 30) {
+		if (worldSustainability <= 50 && worldSustainability > 30) {
 			System.out.println("Planet isn't looking good friend!");
 			System.out.println();
 			System.out.println("Do you want to?..");
@@ -52,7 +52,7 @@ public class mainframe {
 							userChoice = scnr.nextInt();
 						}
 			}
-		else if (progress <= 30 && progress > 20) {
+		else if (worldSustainability <= 30 && worldSustainability > 20) {
 			System.out.println("Planet getting a little scary!");
 			System.out.println();
 			System.out.println("Do you want to?..");
@@ -89,7 +89,7 @@ public class mainframe {
 						}
 			}
 		
-		else if (progress <= 20 && progress > 10) {
+		else if (worldSustainability <= 20 && worldSustainability > 10) {
 			System.out.println("Planet is on its way out, We gotta save it!!");
 			System.out.println();
 			System.out.println("Do you want to?..");
