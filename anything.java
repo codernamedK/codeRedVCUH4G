@@ -15,36 +15,42 @@ public class MainFrame {
             System.out.print("Wow look at the time! You almost missed your doctors appointment. Would you like to walk (1), ride the bike (2), or drive (3)?\n");
             userChoice = scanner.nextInt();
 
+            if (worldSustainability <= 75  && worldSustainability > 100){
             if (userChoice == 1 || userChoice == 2) {
                 System.out.print("You just repaired a part of your Ozone layer. Now there's less smog and your planet is prettier!\n");
-                behaviorCount++;
+                worldSustainibility += 30; 
+                numGoodDeeds++;
             } else if (userChoice == 3) {
                 System.out.print("You drove your car. There is now extreme air pollution making it difficult to breathe.\n");
-                behaviorCount--;
+                numBadDeeds++;
             } else {
                 System.out.print("Error. You must choose either 1,2, or 3.\n");
             }
+                
         }
 
 
-        while (true) {
-            System.out.print("Press 1 to continue or 2 to quit.\n");
+        while (worldSustainability <= 150) {
+            System.out.print("Pick an option to better the environment(1) or stop playing(2)!/n");
             int userSecChoice = scanner.nextInt();
             if (userSecChoice == 1) {
                 while (true) {
+                    if(worldSustainability <= 50 && worldSustainability > 75){
                     System.out.print("Looks like you are thirsty! Buy a 40 pack of plastic water bottles(1) or drink fridge water(2)?\n");
                     int userThirdChoice = scanner.nextInt();
 
                     if (userThirdChoice == 1) {
                         System.out.print("Unfortunately your water bottles were not properly disposed of. The ocean now has over 70% of plastic waste in it making it difficult for species to survive.\n");
-                        behaviorCount--;
+                        numBadDeeds;
                         break;
                     } else if (userThirdChoice == 2) {
-                        System.out.print("You just contributed to less plastic waste. There is less garbage in the ocean now!\n");
-                        behaviorCount++;
+                        System.out.print("You just contributed to less plastic waste. There is less garbage in the ocean now! Your planet is prettier! \n");
+                        worldSustainability += 20;
+                        numGoodDeeds++;
                         break;
                     } else {
                         System.out.print("Error. You must choose either 1 or 2.\n");
+                    }
                     }
                 }
 
