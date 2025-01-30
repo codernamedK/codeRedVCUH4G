@@ -69,9 +69,6 @@ public class MainFrame {
     }
 
     public static void main(String[] args) {
-        worldSustainability = 175;
-        menu();
-
         int userChoice = 0;
 		//int progress = checkStatus(); use this method to check on status
 		
