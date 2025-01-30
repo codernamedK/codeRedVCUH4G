@@ -12,7 +12,7 @@ public class MainFrame {
      *   world sustainability as an input.
      * @return a progress bar of the world sustainability as a String
      */
-    public static String createSustainabilityBar() {
+    private static String createSustainabilityBar() {
         String worldSustainabilityBar = "[";
         // progress bar progression: each "=" represents 5%
         int progress = worldSustainability / (worldSustainabilityPerPercent * 5);
