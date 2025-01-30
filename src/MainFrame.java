@@ -4,7 +4,7 @@ public class MainFrame {
     private static int numGoodDeeds = 0;
     private static int numBadDeeds = 0;
     private static int worldSustainability = 0;
-    private final static int worldSustainabilityPerPercent = 2; // max for bar is 200 points
+    private final static int worldSustainabilityPerPercent = 1.5; // max for bar is 150 points
 
 
     /**
@@ -16,7 +16,7 @@ public class MainFrame {
         String worldSustainabilityBar = "[";
         // progress bar progression: each "=" represents 5%
         int progress = worldSustainability / (worldSustainabilityPerPercent * 5);
-        if (progress > 20) { // can have a score higher than 200, but the bar won't overfill
+        if (progress > 20) { // can have a score higher than 150, but the bar won't overfill
             progress = 20;
         }
 
